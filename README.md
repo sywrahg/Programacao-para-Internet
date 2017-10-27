@@ -19,4 +19,4 @@
 * Projeto realizado para conclusão da disciplina de Programação Corporativa (https://github.com/sywrahg/Evento-Holiday).
 
 #### Expectativa quanto a disciplina:
->Aprender e aproveitar ao máximo o conteúdo ministrado e contribuir como como for possível.
+>Aprender e aproveitar ao máximo o conteúdo ministrado e contribuir como for possível.
