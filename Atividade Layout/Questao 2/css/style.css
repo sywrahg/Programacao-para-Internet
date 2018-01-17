@@ -1,0 +1,40 @@
+main, header, footer, nav, aside {
+    padding: 5px;
+    margin: auto;
+}
+
+nav {
+    background-color: #0f0f0f;
+}
+
+aside {
+    padding: 20px 80px 60px 80px;
+    background-color: #eeeeee;
+}
+
+h1 {
+    font-size: 50px;
+
+}
+
+main {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+footer {
+    margin-top: 20px;
+    padding-left: 80px;
+}
+
+.home, .name {
+    color: white;
+}
+
+.link, .dropdown {
+    color: lightgray;
+}
+
+.disabled {
+    color: #5e5e5e;
+}

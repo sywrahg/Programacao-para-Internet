@@ -1,0 +1,32 @@
+main, header, footer, aside, nav {
+    padding: 5px;
+}
+
+header, footer {
+    background-color: #b2dba1;
+}
+
+nav, aside {
+    height: 670px;
+}
+
+header {
+    border-bottom: 1px dotted gray;
+}
+
+nav {
+    background-color: #c9e2b3;
+}
+
+aside {
+    background-color: #eeeeee;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px dotted gray;
+}
+
+a {
+    color: #3c763d;
+}
