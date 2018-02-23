@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class = "col-lg-12">
+		<h2 style="margin-top: 0px">{{ perfil.nome }}</h2>
+		<address>			
+			<a href = "mailto:{{ perfil.email }}">{{ perfil.email }}</a>
+			<br>
+			<strong>{{ perfil.nome_empresa }}</strong>
+		
+		</address>
+
+		{% if perfil_logado.pode_convidar %}
+			<div class = "well well-sm">Vocês já estão conectados</div>
+		{% elif perfil != perfil_logado %}	
+			<a href = "{% url 'convidar' perfil.id %}">
+				Convidar
+			</a>	
+		{% endif %}	
+
+		<div class="panel panel-default">
+                <div class="panel-heading">
+                 	Postagens
+                </div>
+            {% if timeline_my_posts.count > 0  %}	
+                <ul class="list-group">
+                    {% for post in timeline_my_posts.all %}
+                        <li class = "list-group-item">    
+                        		<p><STRONG>Postado por {{post.perfil.nome}}:</STRONG> 
+                        			<a class="pull-right" href="{% url 'excluir_post' post.id %}">
+                                	excluir
+                            		</a>  
+                            	</p>
+                                <p>{{ post }}</p>
+                                {{post.data}}
+                                                        
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <div class="panel-body">
+                    Não há posts :(
+                </div>    
+            {% endif %}    
+    </div>    
+</div>		
+{% endblock %}		
